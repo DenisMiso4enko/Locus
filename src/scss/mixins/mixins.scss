@@ -1,0 +1,47 @@
+$h_70: 70px;
+$h_40: 40px;
+$h_30: 30px;
+$h_25: 25px;
+$h_20: 20px;
+
+
+
+$white: #FFFFFF;
+$green: #58A9A5;
+$light-green:  #CCF0E6;
+$black: #1C2323;
+
+@mixin headers {
+    font-size: $h_70;
+    font-weight: 800;
+    line-height: 105px;
+    color: $black;
+}
+@mixin subtitles {
+    font-size: $h_30;
+    line-height: 45px;
+    color: $black;
+}
+@mixin text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #486958;
+}
+@mixin text-small {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #486958;
+    
+}
+
+@mixin btn {
+    padding: 21px 85px;
+    background: #58A9A5;
+    border-radius: 20px 20px 20px 0px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
