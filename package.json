@@ -1,0 +1,28 @@
+{
+  "name": "locus",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisMiso4enko/Locus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenisMiso4enko/Locus/issues"
+  },
+  "homepage": "https://github.com/DenisMiso4enko/Locus#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7"
+  }
+}
