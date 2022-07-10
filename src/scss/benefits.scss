@@ -1,0 +1,57 @@
+@import 'mixins/mixins.scss';   
+
+.section-benefits {
+    margin: 62px 0 240px;
+}
+.benefits-inner {
+    display: flex;
+    .benefits__photo {
+
+    }
+    .benefits__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 120px;
+        background: $light-green;
+        position: relative;
+        &::before {
+            content: url(../img/derore.svg);
+            position: absolute;
+            left: 7%;
+            bottom: 42%;
+            z-index: 0;
+        }
+        &__numbers {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 123px;
+            &__item {
+                min-width: 119px;
+                max-width: 204px;
+                &__title {
+                    @include headers;
+                    color: $green;
+                }
+                &__subtitle {
+                    @include subtitles;
+                    color: $green;
+                }
+            }
+        }
+        &__text {
+            &__desc {
+                font-style: italic;
+                @include text;
+                color: #486958;
+                margin-bottom: 62px;
+                z-index: 1000;
+            }
+            .autor {
+
+                @include text;
+                color: $green;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import 'mixins/mixins.scss';   
+
+.section-contact {
+    padding-bottom: 300px;
+
+}
+.contact-inner {
+    display: flex;
+    justify-content: space-between;
+    .contact-text {
+        &__title {
+            @include headers;
+            margin-bottom: 10px;
+        }
+        &__subtitle {
+            max-width: 398px;
+            @include subtitles;
+            color: #486958;
+            position: relative;
+        }
+        .contact-text__subtitle::after {
+            content: url(../img/after.svg);
+            position: absolute;
+            bottom: -77px;
+            left: 70px;
+            transform: translateX(-50%);
+        }
+    }
+    .contact-form {
+        width: 68%;
+        padding: 54px;
+        border: 1px solid #486958;
+        &__form {
+            .input-wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid #000000;
+                margin-bottom: 57px;
+                label {
+                    @include text;
+                }
+                input {
+                    @include text;
+                    color: $black;
+                }
+            }
+            .form-desc {
+                display: flex;
+                justify-content: space-between;
+                .description {
+                    width: 62%;
+                    resize: none;
+                    @include text;
+                }
+                &__btn {
+                    @include btn;
+                }
+            }
+            .description::placeholder {
+                @include text;
+            }
+        }
+    }
+}

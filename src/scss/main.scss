@@ -1,0 +1,33 @@
+@import 'mixins/mixins.scss'; 
+
+.main {
+margin: 120px 0 120px;
+}
+.main-inner {
+    display: flex;
+    .main__content {
+        width: 50%;
+        .title {
+            @include headers;
+            max-width: 674px;
+            margin-bottom: 50px;
+        }
+        .subtitle {
+            @include subtitles;
+            max-width: 743px;
+            margin-bottom: 50px;
+        }
+        .btn-main {
+            @include btn;
+        }
+    }
+    .main-photo {
+        width: 50%;
+        &__img {
+            img {
+                background: black;
+               
+            }
+        }
+    }
+}

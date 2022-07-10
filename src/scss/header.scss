@@ -1,0 +1,70 @@
+@import 'mixins/mixins.scss';
+
+.header {
+
+}
+
+.header-inner {
+    padding: 90px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-menu {
+        &__list {
+            display: flex;
+            &__item {
+                margin-right: 86px;
+                position: relative;
+                :hover {
+                    color: $green;
+                    font-weight: 700;
+
+                    transition: 0.1s;
+                }
+                :hover::before {
+                    content: '';
+                    position: absolute;
+                    width: 46px;
+                    height: 6px;
+                    background: #FEC62D;
+                    border-radius: 21px;
+                    left: 50%;
+                    bottom: -10px;
+                    transform: translateX(-50%);
+                }
+                a {
+                    font-size: $h_25;
+                    line-height: 38px;
+                    color: #404242;
+                }
+                .active {
+                    color: $green;
+                    font-weight: 700;
+                    position: relative;
+                }
+                .active::before {
+                    content: '';
+                    position: absolute;
+                    width: 46px;
+                    height: 6px;
+                    background: #FEC62D;
+                    border-radius: 21px;
+                    left: 50%;
+                    bottom: -10px;
+                    transform: translateX(-50%);
+                    
+                }
+            }
+            
+        }
+        .nav-menu__list__item:last-child {
+            margin-right: 0;
+        }
+    }
+    .btn {
+        @include btn;
+        border-radius: 15px;
+        
+    }
+    
+}

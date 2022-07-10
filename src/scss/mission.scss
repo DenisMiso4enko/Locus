@@ -1,0 +1,32 @@
+@import 'mixins/mixins.scss';  
+
+.section-mission {
+    margin: 150px 0 120px;
+
+}
+.mission-inner {
+    display: flex;
+    justify-content: space-between;
+    .mission-photo {
+        width: 50%;
+        img {
+           
+        }
+    }
+    .mission-content {
+        
+        width: 50%;
+        &__title {
+            max-width: 487px;
+            @include headers; 
+            font-size: $h_40;
+            line-height: 60px;
+            margin-bottom: 50px;
+        }
+        &__subtitle {
+            max-width: 708px;
+            @include subtitles;
+            color: #486958;
+        }
+    }
+}

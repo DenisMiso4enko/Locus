@@ -1,0 +1,67 @@
+@import 'mixins/mixins.scss'; 
+
+
+.setion-works {
+    margin: 0 150px;
+}
+.works-inner {
+    &__title {
+        @include headers;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__subtitle {
+        @include subtitles;
+        margin-bottom: 71px;
+        text-align: center;
+    }
+    .works-prev {
+        display: flex;
+        &__img {
+
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $light-green;
+            padding: 0 106px;
+            position: relative;
+            .description {
+                @include text-small;
+                margin-bottom: 41px;
+            }
+            &__title {
+                font-weight: 700;
+                color: $green;
+                @include text-small;
+            }
+            .play-link {
+                height: 128px;
+                width: 128px;
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 50%;
+                padding: 14px;
+                position: absolute;
+                left: -65px;
+                bottom: 40px;
+                
+                .circle {
+                    width: 100px;
+                    height: 100px;
+                    background: $white;
+                    border-radius: 50%;
+                    position: relative;
+                }
+                .circle::after {
+                    content: url(../img/play-icon.svg);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+
+}

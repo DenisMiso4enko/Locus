@@ -1,0 +1,20 @@
+@import 'mixins/mixins.scss';  
+
+.section-testimonial {
+
+}
+.testimonial-inner {
+    .testimonial-title {
+        @include headers;
+        text-align: center;
+        margin-bottom: 21px;
+    }
+    .testimonial__brands {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__item:not(:last-child) {
+            margin-right: 80px;
+        }
+    }
+}

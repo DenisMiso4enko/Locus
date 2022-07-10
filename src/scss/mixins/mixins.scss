@@ -24,13 +24,13 @@ $black: #1C2323;
 }
 @mixin text {
     font-weight: 500;
-    font-size: 25px;
+    font-size: $h_25;
     line-height: 38px;
     color: #486958;
 }
 @mixin text-small {
     font-weight: 500;
-    font-size: 20px;
+    font-size: $h_20;
     line-height: 30px;
     color: #486958;
     

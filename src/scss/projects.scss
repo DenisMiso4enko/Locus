@@ -1,0 +1,51 @@
+@import 'mixins/mixins.scss';  
+
+.section-projects {
+    margin: 0 0 120px;
+}
+.projects-inner {
+    .projects-title {
+        @include headers;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .projects-subtitle {
+        text-align: center;
+        @include subtitles;
+        margin-bottom: 160px;
+        position: relative;
+    }
+    .projects-subtitle::after {
+        content: url(../img/after.svg);
+        position: absolute;
+        top: 51px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .project-cards {
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            max-width: 453px;
+            &__text {
+                margin-bottom: 35px;
+                &__title {
+                    font-weight: 700;
+                    font-size: $h_40;
+                    color: $green;
+                    margin-bottom: 5px;
+                }
+                &__subtitle {
+                    @include text-small;
+                }
+            }
+            &__photo {
+                img {
+                    margin-bottom: 35px;
+                }
+            }
+
+        }
+    }
+}
